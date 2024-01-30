@@ -72,8 +72,7 @@ To prioritize MVP features, the following questions were considered:
 
 3. **Learn:**
    - Launch the MVP and collect feedback from users.
-   - Evaluate the acceptance and competitiveness of the system in the market.
-
+   
 ## Contribution
 
 If you would like to contribute to this project, please follow the outlined steps in the previous README.
