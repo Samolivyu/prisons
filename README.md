@@ -1,4 +1,4 @@
-# Comprehensive Prison Management System MVP (Minimum Viable Product)
+# Prison Management System MVP (Minimum Viable Product)
 
 ## Overview
 
