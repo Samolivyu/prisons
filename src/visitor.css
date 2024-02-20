@@ -1,0 +1,18 @@
+.visitors-body{
+    padding: 0px;
+    margin-left: 200px;
+    background-color: lightgray;
+}
+
+.page-title{
+    color: black;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.page-title h1{
+    font-weight: bold;
+    margin: 0;
+}

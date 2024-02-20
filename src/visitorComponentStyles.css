@@ -1,0 +1,16 @@
+.visitor-container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    color: black;
+}
+
+.visitor_name{
+  color: grey;
+}
+
+.visitor_name p{
+    color: black;
+}

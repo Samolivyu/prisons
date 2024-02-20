@@ -1,163 +1,70 @@
-# Prison Management System MVP (Minimum Viable Product)
+# Getting Started with Create React App
 
-## Overview
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This repository hosts the source code for a robust Prison Management System MVP. Developed using Vue for the frontend, HTML, and CSS for the user interface, and Laravel for the backend, this MVP aims to address the escalating challenges in prison management. The system offers features such as Inmate Profile Management, Case Management, Charges Management, Drug Screen Management, Service Management, Tracking and Attendance Management, Dashboards & Reporting, and more.
+## Available Scripts
 
-## Challenges in Prison Management
+In the project directory, you can run:
 
-The challenges in managing prison systems have intensified due to the increasing influence of organized crime and the opportunities provided by new technologies and globalization. The prison system faces the dual responsibility of enforcing penalties while ensuring the reintegration and respect for the human dignity of all prisoners.
+### `npm start`
 
-## Platform Highlights
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-To address these challenges, we present a comprehensive platform that identifies protocols, norms, and best practices to enhance prison settings management. This MVP assists organizations in overcoming complex processing challenges, offering benefits such as:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- **Inmate Management:**
-  - Capture and manage identity information, charges, and service details.
-  - Complete profiling options with demographic details.
+### `npm test`
 
-- **Attendance Tracking & Progress:**
-  - Automates attendance tracking and monitors progress during each service session.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- **Reporting & Records Management:**
-  - Provides annual, quarterly, and monthly reporting, audit, and records management.
+### `npm run build`
 
-- **Mug Shot Capturing:**
-  - Integrated mug shot capturing system.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- **Automated Screening Process:**
-  - Automatically screens inmates based on their charges.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- **Workflow Automation:**
-  - Supports automated workflows to streamline inmate processes.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- **Case Assignment and Scheduling:**
-  - Auto-assigns inmate cases, schedules tasks, and sends reminders.
+### `npm run eject`
 
-- **Days in Jail Calculation:**
-  - Auto calculates the days in jail based on inmate cases.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-- **Risk Assessments and Classifications:**
-  - Conducts risk assessments and assigns classifications.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- **Sessions/Program Schedules:**
-  - Schedules programs based on inmate risk/need levels.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-- **Document and Media Uploads:**
-  - Simplifies uploads of documents, photos, and videos directly to SharePoint.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-- **Mobile and Tablet Friendly:**
-  - System is mobile and tablet-friendly with a cloud-ready module.
+## Learn More
 
-- **Automatic Backup:**
-  - Reduces the risk of information loss with automatic daily backups.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- **Request and Document Management:**
-  - Sorts through active and archived requests, appeals, and documents with a quick and advanced integrated search engine.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-- **Analytics and Insights:**
-  - Compares metrics, gains actionable insights, and improves efficiency through interactive, role-based dashboards and analytic tools.
+### Code Splitting
 
-- **Access Control:**
-  - Provides users access only to the information they need to see.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-## Features
+### Analyzing the Bundle Size
 
-### 1. Inmate Profile Management
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-- **Mugshots:**
-  - View and manage inmate mugshots.
+### Making a Progressive Web App
 
-- **Inmate Personal Details:**
-  - Capture and update personal details of inmates.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### 2. Case Management
+### Advanced Configuration
 
-- **Case Details:**
-  - Manage details related to each inmate's case.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-- **Inmate Charges:**
-  - Keep track of the charges against each inmate.
+### Deployment
 
-- **Release of Information (ROI):**
-  - Record and manage the release of information.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### 3. Charges Management
+### `npm run build` fails to minify
 
-- **List of Charges:**
-  - Manage a list of charges that can be used to process cases and generate screening reports.
-
-### 4. Drug Screen Management
-
-- **Drug Screening Details:**
-  - Capture and manage information related to drug screening.
-
-### 5. Service Management
-
-- **Service Referral:**
-  - Record and manage service referrals for inmates.
-
-### 6. Tracking and Attendance Management
-
-- **Attendance Tracking:**
-  - Automate tracking and record attendance for each service session.
-
-### 7. Dashboards & Reporting
-
-- **Interactive Dashboards:**
-  - Access role-based dashboards for quick insights.
-
-- **Reporting:**
-  - Generate annual, quarterly, and monthly reports.
-
-## Tech Stack
-
-- **Vue:** Front-end framework for building a responsive and dynamic user interface.
-- **HTML & CSS:** Standard web technologies for creating and styling web pages.
-- **Laravel:** PHP framework for building a robust and scalable backend.
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/prison-management-system-mvp.git
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd prison-management-system-mvp
-   ```
-
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-4. Set up Laravel backend (follow instructions in the Laravel project directory).
-
-5. Start the development server:
-   ```bash
-   npm run serve
-   ```
-
-6. Access the application in your web browser at [http://localhost:8080](http://localhost:8080).
-
-## Usage
-
-1. Log in as the senior prison official or warden to access the comprehensive Prison Management System MVP.
-
-2. Utilize the various features, such as Inmate Profile Management, Case Management, and Charges Management, to efficiently manage prison processes.
-
-3. Explore the dashboards and reporting functionalities for actionable insights into prison operations.
-
-4. Contribute to the MVP by following the contribution guidelines outlined in the README.
-
-## Contribution
-
-If you would like to contribute to this enhanced version, please follow the contribution steps outlined in the README.
-
-## License
-
-This MVP is licensed under the [MIT License](LICENSE).
-
----
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

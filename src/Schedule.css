@@ -1,0 +1,44 @@
+.schedulebody{
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+}
+
+.header {}
+
+.Calendar-box {
+    background-color: white;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.calendar_title{
+    display: flex;
+}
+
+.notification_box_container{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: white;
+    width: 200px;
+    position: fixed;
+    right: 10px;
+}
+
+.high-priority{
+    color: #f22121;
+    text-decoration: underline;
+}
+
+.release_dates{
+    color: #2f963f;
+}
+
+.miscellaneous{
+    color: #3282af;
+    text-decoration: underline;
+}

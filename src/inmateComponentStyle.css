@@ -1,0 +1,12 @@
+.inmate-container{
+  color: white;
+  background-color: #204720;
+  padding: 10px;
+  margin: 0;
+}
+.view-more-button{
+    display: flex;
+    flex-direction: row-reverse;
+    bottom: 0;
+    right: 0;
+}

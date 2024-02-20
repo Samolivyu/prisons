@@ -1,0 +1,143 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    height: 100vh;
+    padding-top: 50px;
+    /* width: 100vw; */
+  }
+  
+  /* Header styles */
+  .header {
+    color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  /* Dashboard container styles */
+  .dashboard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    margin-top: 0px;
+    width: 100%;
+  }
+  
+  .active_users {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    width: 200px;
+    height: 100px;
+  }
+
+  .active_users h2{
+    display: flex;
+    font-size: 15px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+
+  .inmate_population {
+    background-color: darkgrey;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+  }
+
+
+  .inmate_population h2 {
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+    top:0;
+    left: 0;
+    margin: 0;
+  }
+
+  .visits_to_prison {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 12px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 100px;
+  }
+  .visits_to_prison p{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .visits_to_prison h2 {
+    display: flex;
+    font-size: 15px;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+
+  .upcoming_events{
+    background-color: #f0f0f0;
+    color: black;
+    border-radius: 30px;
+    padding: 20px;
+    width: 500px;
+    margin-top: 40px;
+  }
+
+  .upcoming_events h2{
+    display: flex;
+    margin: 0;
+  }
+
+  .urgent_note{
+    display: flex;
+    text-decoration: underline;
+    color: red;
+  }
+  .numericbox{
+    display: flex;
+  }
+  .textbox{
+    display: flex;
+  }
+  .events_textbox{
+    display: flex;
+    flex-direction: column;
+    top: 10px;
+
+  }
+  .events_textbox h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .to_review_note{
+    display: flex;
+    text-decoration: underline;
+    color: black;
+  }
+
+  .notification-icon-container{
+    display: flex;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
