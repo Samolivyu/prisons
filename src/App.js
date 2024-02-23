@@ -10,6 +10,7 @@ import React from 'react';
 // import HomePage from './home.js';
 // import Schedule from './Schedule.js';
 import Visitors from './Visitors.js';
+import Inmates from './Inmates.js';
 import Navbar from './Navbar.js';
 
 
@@ -24,7 +25,8 @@ function App() {
       <body>
         {/* <HomePage/> */}
               {/* <Schedule/> */}
-            <Visitors/>
+            {/* <Visitors/> */}
+            <Inmates/>
       </body>
     </div>
 

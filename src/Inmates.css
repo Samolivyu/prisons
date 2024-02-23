@@ -1,0 +1,25 @@
+.inmates-body{
+    padding: 0px;
+    margin-left: 200px;
+    background-color: lightgrey;
+    height: 100wh;
+    width: 100% - 200px;
+}    
+
+.page-title{
+    color: black;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 260px;
+}
+
+.page-title h1{
+    margin: 0;
+}
+
+.inmate_components_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

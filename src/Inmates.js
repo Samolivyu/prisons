@@ -17,7 +17,7 @@ const Inmates = () => {
                         <inmateComponent
                         key={inmate.id}
                         inmateName={inmate.inmateName}
-                        inmate_id={inmate_id}
+                        inmate_id={inmate.inmate_id}
                         />
                     ))}
             </div>
