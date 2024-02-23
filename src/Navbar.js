@@ -16,7 +16,7 @@ export default function NavBar(){
                 <div className="nav-pack">
                     <li className="nav-item">
                     <span className="material-icons">calendar_month</span>
-                    <a href="/schedule">Schedule</a>
+                    <p><a href="/schedule">Schedule</a></p>
                     </li>
                 </div>
 

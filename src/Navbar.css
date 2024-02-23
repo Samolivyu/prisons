@@ -47,6 +47,11 @@
     align-items: center;
     justify-content: center;
   }
+
+  .nav-item p{
+    text-decoration: none;
+    color: black;
+  }
   
   .nav-pack2-pack{
     display: flex;

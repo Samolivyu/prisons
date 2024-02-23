@@ -1,19 +1,28 @@
-import React from "react";
+import React, { Component } from "react";
 import "./visitorComponentStyles.css";
 
 
-const visitorComponent = () => {
 
+export default class visitorComponent extends Component {
+    constructor(props){
+        super(props);
 
-    return (
+        this.state = {
+            visitorName: this.visitorName,
+            inmateName: this.inmateName
+        };
+    }
+
+    render() {
+        return (
         <div className="visitor-container">
 
             <div className="visitor_name">
-                <p>Name: {{visitorName}}</p>
+                <p>Name: {visitorName}</p>
             </div>
 
             <div className="inmateVisited">
-                <p>For: {{inmateName}}</p>
+                <p>For: {inmateName}</p>
             </div>
 
             <div className="entry_time">
@@ -24,8 +33,6 @@ const visitorComponent = () => {
                 <p>Exit time: </p>
             </div>
         </div>
-    );
-};
-
-export default visitorComponent;
-
+        );
+    }
+}

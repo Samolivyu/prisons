@@ -1,8 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
 import './inmateComponentStyle.css';
 
 
-const inmateComponent = () => {
+export default class inmateComponent extends Component{
+  constructor(){
+    super();
+  }
+
+  render() {
     return(
       <div className="inmate-container">
         <div className="inmate-name">
@@ -18,8 +23,9 @@ const inmateComponent = () => {
         </div>
       </div>
 
-    );
+    ); 
+  }
 
-};
+}
 
-export default inmateComponent;
+// export default inmateComponent;

@@ -6,9 +6,9 @@ import  visitorComponent from './visitorComponent.js';
 const Visitors = () => {
     const visitors = [ 
         { id: 1, visitor_name: 'John Doe', inmateVisited: "Munene Mwenda", entry_time:'11:34 02/11/2004', exit_time:'14:34 02/11/2004' },
-        { id: 1, visitor_name: 'John Doe', inmateVisited: "Munene Mwenda", entry_time:'11:34 02/11/2004', exit_time:'14:34 02/11/2004' },
-        { id: 1, visitor_name: 'John Doe', inmateVisited: "Munene Mwenda", entry_time:'11:34 02/11/2004', exit_time:'14:34 02/11/2004' },
-        { id: 1, visitor_name: 'John Doe', inmateVisited: "Munene Mwenda", entry_time:'11:34 02/11/2004', exit_time:'14:34 02/11/2004' }
+        { id: 2, visitor_name: 'John Doe', inmateVisited: "Munene Mwenda", entry_time:'11:34 02/11/2004', exit_time:'14:34 02/11/2004' },
+        { id: 3, visitor_name: 'John Doe', inmateVisited: "Munene Mwenda", entry_time:'11:34 02/11/2004', exit_time:'14:34 02/11/2004' },
+        { id: 4, visitor_name: 'John Doe', inmateVisited: "Munene Mwenda", entry_time:'11:34 02/11/2004', exit_time:'14:34 02/11/2004' }
     ]
 
 
