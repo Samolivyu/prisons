@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './visitor.css';
-import  visitorComponent from './visitorComponent.js';
+import  VisitorComponent from './visitorComponent.js';
 
  const visitors = [ 
         { id: 1, visitor_name: 'John Doe', inmateVisited: "Munene Mwenda", entry_time:'11:34 02/11/2004', exit_time:'14:34 02/11/2004' },
@@ -10,9 +10,7 @@ import  visitorComponent from './visitorComponent.js';
     ]
 
 class Visitors extends Component{
-    constructor(){
-        super();
-    }
+
     render(){
         return (
             <div className='visitors-body'>
@@ -22,7 +20,7 @@ class Visitors extends Component{
 
                 <div className='visitor_components_container'>
                     {visitors.map(visitor => (
-                                        <visitorComponent
+                                        <VisitorComponent
                                         key={visitor.id}
                                         visitor_name={visitor.visitor_name}
                                         inmateVisited={visitor.inmateVisited}

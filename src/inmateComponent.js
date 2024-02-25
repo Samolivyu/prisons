@@ -3,16 +3,13 @@ import './inmateComponentStyle.css';
 
 
 export default class inmateComponent extends Component{
-  constructor(props){
-    super(props);
-
-    this.state = {
-      inmateName: this.inmateName,
-      inmate_id: this.inmate_id
-    };
-  }
+  // constructor(props){
+  //   super(props);
+  // }
 
   render() {
+    const { inmateName, inmate_id} = this.props;
+    
     return(
       <div className="inmate-container">
         <div className="inmate-name">

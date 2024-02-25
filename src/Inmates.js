@@ -1,18 +1,19 @@
 import React, {Component} from 'react';
 import './Inmates.css';
-import inmateComponent from './inmateComponent';
+import InmateComponent from './inmateComponent';
 
 
 const inmates = [
     {id: 1, inmateName: 'Munene Mwenda', inmate_id:'12345'},
-    {id: 2, inamteName: 'Mwenda Munene', inmate_id: '98765'},
+    {id: 2, inmateName: 'Mwenda Munene', inmate_id: '98765'},
     {id: 3, inmateName: 'Munene Munene', inmate_id: '56789'} 
 ]
 class Inmates extends Component{
-    constructor(){
-        super();
-    }
+    // constructor(){
+    //     super();
+    // }
    render(){
+
         return (
             <div className='inmates-body'>
                 <div className='page-title'>
@@ -20,7 +21,7 @@ class Inmates extends Component{
                 </div>  
                 <div className='inmate_components_container'>
                         {inmates.map(inmate => (
-                            <inmateComponent
+                            <InmateComponent
                             key={inmate.id}
                             inmateName={inmate.inmateName}
                             inmate_id={inmate.inmate_id}
