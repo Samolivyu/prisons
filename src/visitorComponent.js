@@ -14,7 +14,10 @@ export default class visitorComponent extends Component {
     }
 
     render() {
+
+        const { visitorName, inmateName} = this.props;
         return (
+        
         <div className="visitor-container">
 
             <div className="visitor_name">
