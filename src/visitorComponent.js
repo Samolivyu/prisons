@@ -3,7 +3,7 @@ import "./visitorComponentStyles.css";
 
 
 
-export default class visitorComponent extends Component {
+export default class VisitorComponent extends Component {
     constructor(props){
         super(props);
 

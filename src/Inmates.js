@@ -4,10 +4,11 @@ import InmateComponent from './inmateComponent';
 
 
 const inmates = [
-    {id: 1, inmateName: 'Munene Mwenda', inmate_id:'12345'},
-    {id: 2, inmateName: 'Mwenda Munene', inmate_id: '98765'},
-    {id: 3, inmateName: 'Munene Munene', inmate_id: '56789'} 
-]
+    { id: 1, inmateName: 'Munene Mwenda', inmate_id:'12345'},
+    { id: 2, inmateName: 'Mwenda Munene', inmate_id: '98765'},
+    { id: 3, inmateName: 'Munene Munene', inmate_id: '56789'} 
+];
+
 class Inmates extends Component{
     // constructor(){
     //     super();
