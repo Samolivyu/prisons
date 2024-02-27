@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import './inmateComponentStyle.css';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 
 export default class inmateComponent extends Component{
@@ -21,7 +23,29 @@ export default class inmateComponent extends Component{
             <p>{inmate_id}</p>
         </div>
         <div className="view-more-button">
-            <button>View</button>
+          <Popup trigger=
+          {<button>View</button>}
+          modal nested>
+            {
+              close => (
+                <div className="modal">
+                  <div className="content">
+                    <div className="prisoner-popup-image-container">
+
+                    </div>
+                    <div className="prisoner-popup-info-container">
+
+                    </div>
+                  </div>
+                  <div>
+                    <button onClick={() => close()}>
+                      Close View
+                    </button>
+                  </div>
+                </div>
+              )
+            }
+          </Popup>
         </div>
       </div>
 

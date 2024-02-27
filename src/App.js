@@ -9,8 +9,8 @@ import React, { Component } from 'react';
 // } from "react-router-dom";
 // import HomePage from './home.js';
 // import Schedule from './Schedule.js';
-import Visitors from './Visitors.js';
-// import Inmates from './Inmates.js';
+// import Visitors from './Visitors.js';
+import Inmates from './Inmates.js';
 import Navbar from './Navbar.js';
 
 
@@ -26,8 +26,8 @@ render(){
         <body>
           {/* <HomePage/> */}
                 {/* <Schedule/> */}
-              <Visitors/>
-              {/* <Inmates/> */}
+              {/* <Visitors/> */}
+              <Inmates/>
         </body>
       </div>
     );
