@@ -2,14 +2,15 @@ import React, { Component } from "react";
 import './inmateComponentStyle.css';
 
 
-export default class inmateComponent extends Component{
+export default class InmateComponent extends Component{
   // constructor(props){
   //   super(props);
   // }
 
   render() {
+    console.log(this.props);
     const { inmateName, inmate_id} = this.props;
-    
+
     return(
       <div className="inmate-container">
         <div className="inmate-name">
