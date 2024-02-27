@@ -47,9 +47,6 @@ export default function NavBar(){
                         <span className="material-icons">contact_support</span>
                         <a href="/support">support</a>
                     </li>
-               </div>
-                
-                <div className="nav-pack2">
                     <li className="nav-item">
                         <span className="material-icons">report</span>
                         <a href="/report-technical">report_technical</a>
