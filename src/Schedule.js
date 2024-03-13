@@ -1,5 +1,6 @@
 import React from "react";
-import Calendar from './SchedulePageComponents/Calendar';
+import { Indicator } from '@mantine/core';
+import { Calendar } from '@mantine/dates';
 import './Schedule.css'
 
 
@@ -12,7 +13,17 @@ const Schedule = () => {
                 <div className="calendar_title">
                     <h3>Calendar</h3>
                 </div>
-                <Calendar/>
+                <Calendar
+                    static
+                    renderDay={(date) => {
+                        const day = date.getDate();
+                        return (
+                            <Indicator size={8} color="red" offset={-2} disabled={day !== 16}>
+                                <div>{day}</div>
+                            </Indicator>
+                        );
+                    }}
+                />
             </div>
 
             <div>
