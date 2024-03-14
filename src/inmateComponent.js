@@ -25,27 +25,27 @@ export default class InmateComponent extends Component{
         </div>
         <div className="view-more-button">
           <Popup trigger=
-          {<button>View</button>}
-          modal nested>
-            {
-              close => (
-                <div className="modal">
-                  <div className="content">
-                    <div className="prisoner-popup-image-container">
+            {<button>View</button>}
+            modal nested>
+              {
+                close => (
+                  <div className="modal">
+                    <div className="content">
+                      <div className="prisoner-popup-image-container">
 
+                      </div>
+                      <div className="prisoner-popup-info-container">
+
+                      </div>
                     </div>
-                    <div className="prisoner-popup-info-container">
-
+                    <div>
+                      <button onClick={() => close()}>
+                        Close View
+                      </button>
                     </div>
                   </div>
-                  <div>
-                    <button onClick={() => close()}>
-                      Close View
-                    </button>
-                  </div>
-                </div>
-              )
-            }
+                )
+              }
           </Popup>
         </div>
       </div>
