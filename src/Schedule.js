@@ -1,5 +1,5 @@
 import React from "react";
-import Calendar from './SchedulePageComponents/Calendar';
+// import Calendar from './SchedulePageComponents/Calendar';
 import './Schedule.css'
 
 
@@ -12,7 +12,7 @@ const Schedule = () => {
                 <div className="calendar_title">
                     <h3>Calendar</h3>
                 </div>
-                <Calendar/>
+                {/* <Calendar/> */}
             </div>
 
             <div>
