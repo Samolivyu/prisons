@@ -8,13 +8,13 @@ import React, { Component } from 'react';
 //   Link,
 // } from "react-router-dom";
 // import HomePage from './home.js';
-import Schedule from './Schedule.js';
+// import Schedule from './Schedule.js';
 // import Visitors from './Visitors.js';
-// import Inmates from './Inmates.js';
+import Inmates from './Inmates.js';
 import Navbar from './Navbar.js';
 
 
-class App extends Component() {
+class App extends Component {
 
 render(){
   return (
@@ -25,9 +25,9 @@ render(){
         <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel="stylesheet"></link>
         <body>
           {/* <HomePage/> */}
-                <Schedule/>
+                {/* <Schedule/> */}
               {/* <Visitors/> */}
-              {/* <Inmates/> */}
+              <Inmates/>
         </body>
       </div>
     );

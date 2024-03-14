@@ -3,17 +3,17 @@ import './Inmates.css';
 import InmateComponent from './inmateComponent';
 
 
-const inmates = [
-    { id: 1, inmateName: 'Munene Mwenda', inmate_id:'12345'},
-    { id: 2, inmateName: 'Mwenda Munene', inmate_id: '98765'},
-    { id: 3, inmateName: 'Munene Munene', inmate_id: '56789'} 
-];
-
 class Inmates extends Component{
     // constructor(){
     //     super();
     // }
    render(){
+
+    const inmates = [
+        { id: 1, inmateName: 'Munene Mwenda', inmate_id:'12345'},
+        { id: 2, inmateName: 'Mwenda Munene', inmate_id: '98765'},
+        { id: 3, inmateName: 'Munene Munene', inmate_id: '56789'} 
+    ];
 
         return (
             <div className='inmates-body'>
@@ -21,11 +21,10 @@ class Inmates extends Component{
                     <h1>Inmates</h1>
                 </div>  
                 <div className='inmate_components_container'>
-                        {inmates.map(inmate => (
+                        {inmates.map((inmate, index) => (
                             <InmateComponent
-                            key={inmate.id}
-                            inmateName={inmate.inmateName}
-                            inmate_id={inmate.inmate_id}
+                            key={index}
+                            {...inmate}
                             />
                         ))}
                 </div>

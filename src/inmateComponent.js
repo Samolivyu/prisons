@@ -11,7 +11,7 @@ export default class InmateComponent extends Component{
 
   render() {
     console.log(this.props);
-    const { inmateName, inmate_id} = this.props;
+    const { inmateName, inmate_id, inmate_bloodType, inmate_height} = this.props;
 
     return(
       <div className="inmate-container">
@@ -26,16 +26,16 @@ export default class InmateComponent extends Component{
         <div className="view-more-button">
           <Popup trigger=
             {<button>View</button>}
-            modal nested>
+            position="right center">
               {
                 close => (
                   <div className="modal">
                     <div className="content">
                       <div className="prisoner-popup-image-container">
-
                       </div>
                       <div className="prisoner-popup-info-container">
-
+                        <p>{inmate_bloodType}</p>
+                        <p>{inmate_height}</p>
                       </div>
                     </div>
                     <div>

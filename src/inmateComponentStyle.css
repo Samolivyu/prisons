@@ -2,11 +2,14 @@
   color: white;
   background-color: #204720;
   padding: 10px;
-  margin: 0;
+  margin: 10px;
+  width: 100vw;
 }
 .view-more-button{
     display: flex;
     flex-direction: row-reverse;
+    color: #204720;
+    border: none;
     bottom: 0;
     right: 0;
 }
