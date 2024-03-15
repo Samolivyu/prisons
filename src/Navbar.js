@@ -33,7 +33,7 @@ export default function NavBar(){
                             <div className="nav-pack">
                                 <li className="nav-item">
                                 <span className="material-icons">perm_contact_calendar</span>
-                                <Link href="/inmates">Inmates</Link>
+                                <Link to="/inmates">Inmates</Link>
                                 </li>
                             </div>
 

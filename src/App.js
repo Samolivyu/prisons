@@ -7,29 +7,32 @@ import Schedule from './Schedule.js';
 import Visitors from './Visitors.js';
 import Inmates from './Inmates.js';
 import Navbar from './Navbar.js';
+import { MantineProvider } from '@mantine/core';
 
 
 class App extends Component {
 
 render(){
   return (
-    <Router>
-      <div className="App">
-        <header className='App-header'>
-          <Navbar/>
-        </header>
-        <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel="stylesheet"></link>
-        <body>
-          <Routes>
-          <Route path="/" exact component={<HomePage/>}/>
-          <Route path="/dashboard" component={<HomePage/>}/>
-          <Route path="/schedule" component={<Schedule/>}/>
-          <Route path="/visitors" component={<Visitors/>}/>
-          <Route path="/inmates" component={<Inmates/>}/>
-          </Routes>
-        </body>
-      </div>
-     </Router> 
+    <MantineProvider>
+      <Router>
+        <div className="App">
+          <header className='App-header'>
+            <Navbar/>
+          </header>
+          <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel="stylesheet"></link>
+          <body>
+            <Routes>
+                <Route path="/" element={< HomePage/>}/>
+                <Route path="/dashboard" element={< HomePage/>}/>
+                <Route path="/schedule" element={< Schedule/>}/>
+                <Route path="/visitors" element={< Visitors/>}/>
+                <Route path="/inmates" element={< Inmates/>}/>
+            </Routes>
+          </body>
+        </div>
+      </Router> 
+     </MantineProvider>
     );
   }
   }
