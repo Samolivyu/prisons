@@ -1,15 +1,17 @@
 .App {
   text-align: center;
-  width: calc(100% - 220px);
 }
 
 body{
-  position: absolute;
-  left: 200px;
-  top: 50px;
+  position: relative;
+  left: 0px;
+  top: 0px;
   width: calc(100% - 200px);
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
 }
 
 .App-logo {

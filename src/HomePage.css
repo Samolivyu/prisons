@@ -2,9 +2,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color: lightgray;
-    height: 100vh;
     padding-top: 50px;
-    /* width: 100vw; */
+    width: calc(100% - 200px);
   }
   
   /* Header styles */
@@ -28,11 +27,16 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     margin-top: 0px;
-    width: 100%;
+    width: calc(100% - 200px);
   }
-  
+  .dashboard-top-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
   .active_users {
     background-color: #ffffff;
     border-radius: 20px;

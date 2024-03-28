@@ -4,6 +4,8 @@
     background-color: lightgray;
     height: 100wh;
     width: 100% - 200px;
+    display: flex;
+    position: relative;
 }
 
 .page-title{

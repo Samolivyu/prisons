@@ -14,14 +14,14 @@ class App extends Component {
 
 render(){
   return (
-    <MantineProvider>
+    <MantineProvider defaultColorScheme='dark'>
       <Router>
+        <body>
         <div className="App">
           <header className='App-header'>
             <Navbar/>
           </header>
           <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel="stylesheet"></link>
-          <body>
             <Routes>
                 <Route path="/" element={< HomePage/>}/>
                 <Route path="/dashboard" element={< HomePage/>}/>
@@ -29,8 +29,8 @@ render(){
                 <Route path="/visitors" element={< Visitors/>}/>
                 <Route path="/inmates" element={< Inmates/>}/>
             </Routes>
-          </body>
         </div>
+        </body>
       </Router> 
      </MantineProvider>
     );

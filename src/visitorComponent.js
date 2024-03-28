@@ -21,22 +21,18 @@ export default class VisitorComponent extends Component {
         return (
         
         <div className="visitor-container">
-
-            <div className="visitor_name">
-                <p>Name: {visitorName}</p>
-            </div>
-
-            <div className="inmateVisited">
-                <p>For: {inmateVisited}</p>
-            </div>
-
-            <div className="entry_time">
-                <p>Entry time: {entry_time}</p>
-            </div>
-
-            <div className="exit_time">
-                <p>Exit time: {exit_time}</p>
-            </div>
+                <div className="visitor_name">
+                    <p>Name: {visitorName}</p>
+                </div>
+                <div className="inmateVisited">
+                    <p>For: {inmateVisited}</p>
+                </div>
+                <div className="entry_time">
+                    <p>Entry time: {entry_time}</p>
+                </div>
+                <div className="exit_time">
+                    <p>Exit time: {exit_time}</p>
+                </div>
         </div>
         );
     }

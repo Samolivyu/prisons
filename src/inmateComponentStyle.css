@@ -3,18 +3,37 @@
   background-color: #204720;
   padding: 10px;
   margin: 10px;
-  width: 700px;
+  width: 680px;
 }
-.view-more-button{
-    display: flex;
-    flex-direction: row-reverse;
+.view_more_button{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.view_more_button button{
     color: #204720;
+    background-color: white;
     border: none;
+    height: 30px;
+    width: 80px;
     bottom: 0;
     right: 0;
 }
+.view_more_button button:hover{
+  background-color: #204720;
+  border-color: white;
+  border-width: 10px;
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+}
 
-button{
-  background-color: lightgrey;
-  color: black;
+.close-popup-button button{
+    border: black;
+    color:#204720;
+    height: 30px;
+    width: 80px;
+}
+.close-popup-button button:hover{
+  color: white;
+  background-color: #204720;
 }

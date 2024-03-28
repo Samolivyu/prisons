@@ -11,7 +11,7 @@ export default class InmateComponent extends Component{
 
   render() {
     console.log(this.props);
-    const { inmateName, inmate_id, inmate_bloodType, inmate_height} = this.props;
+    const { inmateName, inmate_id, inmate_bloodType, inmate_height, number_of_tatoos, birth_marks, hearing_impairments, visual_impairments, } = this.props;
 
     return(
       <div className="inmate-container">
@@ -23,10 +23,14 @@ export default class InmateComponent extends Component{
             <p>Inmate Id:</p>
             <p>{inmate_id}</p>
         </div>
-        <div className="view-more-button">
+        <div>
           <Popup trigger=
-            {<button>View</button>}
-            position="right center">
+            {<div className="view_more_button"><button>View</button></div>}
+            position="right center"
+            arrow={true}
+            offsetX={-190}
+            offsetY={-90}
+            closeOnDocumentClick>
               {
                 close => (
                   <div className="modal">
@@ -34,11 +38,15 @@ export default class InmateComponent extends Component{
                       <div className="prisoner-popup-image-container">
                       </div>
                       <div className="prisoner-popup-info-container">
-                        <p>{inmate_bloodType}</p>
-                        <p>{inmate_height}</p>
+                        <p>Inmate blood-type: {inmate_bloodType}</p>
+                        <p>Inmate height: {inmate_height}</p>
+                        <p>Inmate tatoos: {number_of_tatoos}</p>
+                        <p>Birth Marks (Y/N): {birth_marks}</p>
+                        <p>Hearing Impairments: {hearing_impairments}</p>
+                        <p>Visual Impairments: {visual_impairments}</p>
                       </div>
                     </div>
-                    <div>
+                    <div className="close-popup-button">
                       <button onClick={() => close()}>
                         Close View
                       </button>

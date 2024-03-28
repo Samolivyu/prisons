@@ -39,26 +39,25 @@ const HomePage = () => {
       </div>
 
       <div className="dashboard">
-        <div className='dashboard-top-container'>
+          <div className='dashboard-top-container'>
+            <div className="visits_to_prison">
+                <div className='textbox'>
+                  <h2>Total Number of Visits: </h2>
+                </div>
 
-        <div className="visits_to_prison">
-              <div className='textbox'>
-              <h2>Total Number of Visits: </h2>
-              </div>
-
-              <div className='numericbox'>
-              <p>{visitsToPrison}</p>
-              </div>
+                <div className='numericbox'>
+                  <p>{visitsToPrison}</p>
+                </div>
+            </div>
           </div>
-        </div>
 
           <div className="inmate_population">
               <div className='textbox'>
-              <h2>Inmate Population: </h2>
-          </div>
+                <h2>Inmate Population: </h2>
+              </div>
 
-          <div className='numericbox'>
-              <p>{inmatePopulation}</p>
+              <div className='numericbox'>
+                <p>{inmatePopulation}</p>
               </div>
           </div>
           
@@ -73,7 +72,9 @@ const HomePage = () => {
           </div>
 
         </div>
+
         <div className='upcoming_events'>
+
           <div className='events_textbox'>
             <h2>Upcoming Events:</h2>
             <div className='urgent-note-textbox'>
@@ -85,6 +86,7 @@ const HomePage = () => {
               <p className='to_review_note'>To Review</p>
               {/*v-for for the review_notes*/}
             </div>
+
           </div>
         </div>
     </div>
