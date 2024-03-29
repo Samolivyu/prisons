@@ -1,8 +1,6 @@
 .visitors-body{
     padding: 0px;
     margin-left: 200px;
-    background-color: lightgray;
-    height: 100wh;
     width: 100% - 200px;
     display: flex;
     position: relative;

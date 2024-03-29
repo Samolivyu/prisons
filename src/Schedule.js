@@ -24,6 +24,18 @@ const Schedule = () => {
                     <h3>Calendar</h3>
                 </div>
                 <Calendar
+                classNames={{
+                    weekday: 'custom-weekday',
+                    day: 'custom-day',
+                    monthSwitcher: 'custome-month-switcher',
+                    label: 'custom-label',
+                    navigation: 'custom-navigation',
+                    body: 'custom-body',
+                    actions: 'custom-actions',
+                    action: 'custom-action',
+                    daySelected: 'custom-day-selected',
+                    dayDisabled: 'custom-day-disabled',
+                }}
                 getDayProps={(date) => ({
                     selected: selected.some((s) => dayjs(date).isSame(s, 'date')),
                     onClick: () => handleSelect(date)

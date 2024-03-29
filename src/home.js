@@ -59,22 +59,18 @@ const HomePage = () => {
               <div className='numericbox'>
                 <p>{inmatePopulation}</p>
               </div>
-          </div>
-          
+          </div>         
           <div className="active_users">
               <div className='textbox'>
               <h2>Active Users: </h2>
               </div>
-
-            <div className='numericbox'>
-              <p>{activeUsers}</p>
-            </div>
+              <div className='numericbox'>
+                <p>{activeUsers}</p>
+              </div>
           </div>
-
         </div>
 
         <div className='upcoming_events'>
-
           <div className='events_textbox'>
             <h2>Upcoming Events:</h2>
             <div className='urgent-note-textbox'>

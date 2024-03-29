@@ -1,11 +1,14 @@
-/* Global styles */
-body {
+/* body {
     font-family: Arial, sans-serif;
-    background-color: lightgray;
+    background-color: rgb(183, 181, 181);
     padding-top: 50px;
     width: calc(100% - 200px);
+    margin-top: 50px;
+    display: flex;
+    position:absolute;
+    top: 50px;
   }
-  
+   */
   /* Header styles */
   .header {
     color: black;
@@ -38,11 +41,11 @@ body {
     justify-content: center;
   }
   .active_users {
-    background-color: #ffffff;
+    background-color: #cac8c8;
     border-radius: 20px;
     padding: 10px;
     margin-right: 10px;
-    width: 200px;
+    width: 250px;
     height: 100px;
   }
 
@@ -60,7 +63,6 @@ body {
     border-radius: 20px;
     padding: 10px;
     margin-right: 10px;
-    margin-bottom: 10px;
     width: 100px;
     height: 100px;
   }
@@ -68,7 +70,7 @@ body {
 
   .inmate_population h2 {
     display: flex;
-    font-size: 15px;
+    font-size: 20px;
     flex-direction: column;
     top:0;
     left: 0;
@@ -76,11 +78,10 @@ body {
   }
 
   .visits_to_prison {
-    background-color: #ffffff;
+    background-color: #918d8d;
     border-radius: 20px;
     padding: 12px;
     margin-right: 5px;
-    margin-bottom: 10px;
     width: 300px;
     height: 100px;
   }
@@ -91,7 +92,7 @@ body {
 
   .visits_to_prison h2 {
     display: flex;
-    font-size: 15px;
+    font-size: 20px;
     top: 0;
     left: 0;
     margin: 0;
@@ -114,7 +115,7 @@ body {
   .urgent_note{
     display: flex;
     text-decoration: underline;
-    color: red;
+    color: rgb(153, 0, 0);
   }
   .numericbox{
     display: flex;
