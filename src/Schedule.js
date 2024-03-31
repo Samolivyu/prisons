@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import dayjs from 'dayjs';
+import axios from 'axios'; //Axios has been used for the HTTP requests
 import { Indicator } from '@mantine/core';
 import { Calendar } from '@mantine/dates';
 import './Schedule.css'
@@ -7,14 +8,41 @@ import './Schedule.css'
 
 const Schedule = () => {
     const [selected, setSelected] = useState([]);
-    const handleSelect = (date) => {
-        const isSelected = selected.some((s) => dayjs(date).isSame(s, 'date'));
-        if(isSelected){
-            setSelected((current) => current.filter((d) => !dayjs(d).isSame(date, 'date')));
-        } else if(selected.length < 3){ 
-            setSelected((current) => [...current, date]);
+
+    const handleSelect = async (date) => {
+       try{
+        const existingEvent = events.find((event) => dayjs(date).isSame(event.date, 'date'));
+
+        if(existingEvent) {
+            // if date is already selected, delete the event from the database
+            await axios.delete(`/api/events/${existingEvent._id}`);
+            fetchEvents(); //Refresh events after deletion
+        } else {
+            // If date is not selected, create a new event in the database
+            const eventType = prompt('Enter event type (urgent, miscellaneous, release date');
+            await axios.post('/api/events', { date, type: eventType });
+            fetchEvents();
         }
-    }
+       } catch (error) {
+            console.error('Error handling selection:', error);
+       }
+    };
+
+    const [events, setEvents] = useState([]);
+    
+    useEffect(() => {
+        //Fetch calendar events from backend with component mounts
+        fetchEvents();
+    }, []);
+
+    const fetchEvents = async () => {
+        try {
+            const response = await axios.get('/api/events');
+            setEvents(response.data);
+        } catch (error) {
+            console.error('Error fetching events:', error);
+        }
+    };
 
     return(
         <div className="schedulebody">
@@ -24,27 +52,22 @@ const Schedule = () => {
                     <h3>Calendar</h3>
                 </div>
                 <Calendar
-                classNames={{
-                    weekday: 'custom-weekday',
-                    day: 'custom-day',
-                    monthSwitcher: 'custome-month-switcher',
-                    label: 'custom-label',
-                    navigation: 'custom-navigation',
-                    body: 'custom-body',
-                    actions: 'custom-actions',
-                    action: 'custom-action',
-                    daySelected: 'custom-day-selected',
-                    dayDisabled: 'custom-day-disabled',
-                }}
                 getDayProps={(date) => ({
-                    selected: selected.some((s) => dayjs(date).isSame(s, 'date')),
+                    selected: events.some((event) => dayjs(date).isSame(event.date, 'date')),
                     onClick: () => handleSelect(date)
                 })}
+
                     static
                     renderDay={(date) => {
                         const day = date.getDate();
+                        const event = events.find((event) => dayjs(date).isSame(event.date, 'date'));
+                        let color = 'blue'; //Default color for no event
+                        if (event) {
+                            if(event.type === 'urgent') color = 'red';
+                            else if (event.type === 'release') color = 'green';
+                        }
                         return (
-                            <Indicator size={8} color="red" offset={-2} disabled={day !== 16}>
+                            <Indicator size={8} color={color} offset={-2} disabled={day !== 16}>
                                 <div className="dayContainer">{day}</div>
                             </Indicator>
                         );
