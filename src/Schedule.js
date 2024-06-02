@@ -7,6 +7,7 @@ import './Schedule.css'
 
 
 const Schedule = () => {
+    //Initializing the state to hold the selected Dates
     const [selected, setSelected] = useState([]);
 
     const handleSelect = async (date) => {
@@ -16,13 +17,14 @@ const Schedule = () => {
         if(existingEvent) {
             // if date is already selected, delete the event from the database
             await axios.delete(`/api/events/${existingEvent._id}`);
-            fetchEvents(); //Refresh events after deletion
         } else {
             // If date is not selected, create a new event in the database
             const eventType = prompt('Enter event type (urgent, miscellaneous, release date');
             await axios.post('/api/events', { date, type: eventType });
-            fetchEvents();
         }
+
+        //Refresh events after CRUD operation
+        fetchEvents();
        } catch (error) {
             console.error('Error handling selection:', error);
        }
@@ -62,12 +64,15 @@ const Schedule = () => {
                         const day = date.getDate();
                         const event = events.find((event) => dayjs(date).isSame(event.date, 'date'));
                         let color = 'blue'; //Default color for no event
+
                         if (event) {
                             if(event.type === 'urgent') color = 'red';
                             else if (event.type === 'release') color = 'green';
+                            else if (event.type === 'miscellaneous') color = 'blue';
                         }
+
                         return (
-                            <Indicator size={8} color={color} offset={-2} disabled={day !== 16}>
+                            <Indicator size={8} color={color} offset={-2}>
                                 <div className="dayContainer">{day}</div>
                             </Indicator>
                         );
@@ -81,14 +86,31 @@ const Schedule = () => {
                     <div>
                         <p className="high-priority">High Priority</p>
                         {/*v-for for the high priority notificatons */}
+                        <ul>
+                        {events.filter((event) => event.type === 'urgent').map(event => (
+                            <li key={event._id}>{dayjs(event.date).format('YYYY-MM-DD')}</li>
+                        ))}
+                        </ul>
                     </div>
+
                     <div>
                         <p className="release_dates">Release Date</p>
                         {/*v-for for the release dates */}
+                        <ul>
+                         {events.filter((event) => event.type === 'release').map(event => (
+                            <li key={event._id}>{dayjs(event.date).format('YYYY-MM-DD')}</li>
+                         ))}
+                        </ul>
                     </div>
+
                     <div>
                         <p className="miscellaneous">Miscellaneous</p>
                         {/*v-for for the miscellaneous notfications */}
+                        <ul>
+                         {events.filter((event) => event.type ==='miscellaneous').map(event => (
+                            <li key={event._id}>{dayjs(event.date).format('YYYY-MM-DD')}</li>
+                         ))}
+                        </ul>
                     </div>
                 </div>  
             </div>

@@ -10,4 +10,6 @@ app.listen(PORT, () => {
 });
 
 const eventsRouter = require('./routes/events');
-app.use('/ap/events', eventsRouter);
+app.use('/api/events', eventsRouter);
+
+// 2likELY6SuPZyJdY
